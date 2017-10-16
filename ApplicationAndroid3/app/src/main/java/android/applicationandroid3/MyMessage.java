@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class MyMessage extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "przykladowa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +36,13 @@ public class MyMessage extends AppCompatActivity {
                 startActivity(intent);
                 break;
         }
+    }
+
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        android.widget.EditText editText = (android.widget.EditText) findViewById(R.id.message);
+        String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 }
