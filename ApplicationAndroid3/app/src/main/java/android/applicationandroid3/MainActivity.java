@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(MyMessage.EXTRA_MESSAGE);
 
         // Capture the layout's TextView and set the string as its text
         android.widget.TextView UserText = (android.widget.TextView) findViewById(R.id.UserText);

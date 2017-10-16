@@ -41,7 +41,7 @@
             android:id="@+id/submitMessage"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:onClick="click1"
+            android:onClick="sendMessage"
             android:text="Zapisz "
             android:textSize="12sp"
             tools:layout_editor_absoluteX="8dp"
@@ -49,3 +49,4 @@
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
+    git config --global user.email "a-baltrukiewicz@o2.pl"
